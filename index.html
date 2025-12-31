@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>رسالة ليكي ❤️</title>
+<meta charset="UTF-8">
+<title>رسالة ليكي ❤️</title>
 
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      direction: rtl;
-    }
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
 
-    .box {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      text-align: center;
-      width: 280px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    }
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 85%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
 
-    h2 {
-      margin-bottom: 15px;
-    }
+input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
 
-    input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin-bottom: 15px;
-      font-size: 16px;
-    }
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #ff5c8a;
+  color: white;
+  font-size: 16px;
+}
 
-    button {
-      background: #ff5e78;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #ff3b5c;
-    }
-
-    .message {
-      display: none;
-      font-size: 18px;
-      color: #ff3b5c;
-    }
-  </style>
+.message {
+  display: none;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ff3b5c;
+  line-height: 1.8;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="box">
-    <h2>اتفضلي يا بنوتي اكتبي الباسورد 💖</h2>
+<div class="box">
+  <h2>اتفضلي يا بنوتي اكتبي الباسورد 💖</h2>
 
-    <input type="password" id="password" placeholder="اكتبي هنا">
-    <button onclick="check()">دخول</button>
+  <input type="password" id="pass" placeholder="الباسورد">
+  <br>
+  <button onclick="check()">دخول</button>
 
-    <div class="message" id="msg">
-      ❤️ انتي دخلتي قلبي خلاص ❤️
-    </div>
+  <div class="message" id="msg">
+    سنه خلصت وانا بحبك وسنه هتبدأ وانا بحبك أكتر ❤️  
+    ومش مستني يوم زي ده عشان أقولك كده  
+    لأن طول ما إنتي معايا كل يوم عيد  
+
+    <br><br>
+
+    بحبك أوي أوي وبحبك أكتر من نفسي  
+    وبعشقك حرفياً ومهما الكلام يطول  
+    مش هيقدر يوصف اللي في قلبي  
+
+    <br><br>
+
+    ربنا ما يحرمنيش منك أبداً  
+    إنتي نور عيني وأقرب حد ليا  
+    ونفسي تفضلي معايا طول العمر  
+
+    <br><br>
+
+    يبختي بيكي والله  
+    قمورة وحنينة وقلبك أبيض  
+    وبخافي عليا أكتر من نفسي  
+
+    <br><br>
+
+    نفسي تكوني من نصيبي  
+    بحبك يا أم العيال  
+    بحبك يا جنجونتي ❤️
   </div>
+</div>
 
-  <script>
-    function check() {
-      const pass = document.getElementById("password").value;
-      if (pass === "1234") {
-        document.querySelector("h2").style.display = "none";
-        document.querySelector("input").style.display = "none";
-        document.querySelector("button").style.display = "none";
-        document.getElementById("msg").style.display = "block";
-      } else {
-        alert("غلط يا بنوتي 😅");
-      }
-    }
-  </script>
+<script>
+function check() {
+  const pass = document.getElementById("pass").value;
+
+  if (pass === "12-12-2025") {
+    document.getElementById("msg").style.display = "block";
+  } else {
+    alert("غلط يا بنوتي 😅");
+  }
+}
+</script>
 
 </body>
 </html>
